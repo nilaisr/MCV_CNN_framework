@@ -4,10 +4,10 @@
 
 
 ### Members:
-Marc Nuñez Ubach - <marc.nunezu@e-campus.uab.cat>
-Manuel Rey Area - <mreyarea@gmail.com>
-Nilai Sallent Ruiz - <nilai.sallent@e-campus.uab.cat>
-Aitor Sanchez Abellan - <aitor.sanchez.abellan@gmail.com>
+- Marc NuÃ±ez Ubach - <marc.nunezu@e-campus.uab.cat>
+- Manuel Rey Area - <mreyarea@gmail.com>
+- Nilai Sallent Ruiz - <nilai.sallent@e-campus.uab.cat>
+- Aitor Sanchez Abellan - <aitor.sanchez.abellan@gmail.com>
 
 ### Project summary
 
