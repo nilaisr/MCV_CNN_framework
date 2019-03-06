@@ -34,9 +34,9 @@ predict_path_output: None # None uses the default output in the experiment folde
 # Image properties
 size_image_train: null #(1280, 960)
 
-resize_image_train: !!python/tuple[244, 224] #(320, 640)#(640, 480)
-resize_image_valid: !!python/tuple[244, 224] #(320, 640)#(640, 480)
-resize_image_test: !!python/tuple[244, 224] #(320, 640)#(640, 480)
+resize_image_train: !!python/tuple [224,224] #(320, 640)#(640, 480)
+resize_image_valid: !!python/tuple [224,224] #(320, 640)#(640, 480)
+resize_image_test: !!python/tuple [224,224] #(320, 640)#(640, 480)
 crop_train: null
 grayscale: False #Use this option to convert to rgb a grascale dataset
 
@@ -82,9 +82,13 @@ stop_condition: 'valid_mIoU'        # [(x)_loss','(x)_mAcc','(x)_mIoU'] x = vali
 patience: 5
 
 # Image preprocess
-rescale: 1/255.
+rescale: 1.
 mean: [0.28689553, 0.32513301, 0.28389176] #[0.37296272, 0.37296272, 0.37296272]
 std: [0.18696375, 0.19017339, 0.18720214] #[0.21090189, 0.21090189, 0.21090189]
 
 # Data augmentation
-hflips: True
+hflips: False
+random_dist                 : False  # Activate random distortions to the input image [brightness, contrast, saturation]
+
+color_map: null
+num_images: null
