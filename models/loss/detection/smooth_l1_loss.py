@@ -1,5 +1,5 @@
 import torch
-from detection_loss import Detection_Loss
+from .detection_loss import Detection_Loss
 
 class SmoothL1Loss(Detection_Loss):
     def __init__(self, cf, weight=None, ignore_index=255):
