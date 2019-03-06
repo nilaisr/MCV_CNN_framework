@@ -30,7 +30,7 @@ class fromFileDatasetClassification(Data_loader):
             print(cf.map_labels)
             self.gt = [int(cf.map_labels[line]) for line in lines]
 
-        if len(self.gt) != len(self.image_names):
+        if len(self.gt) != len(self.image_names): 
             raise ValueError('number of images != number GT images')
         print ("\t Images found: " + str(len(self.image_names)))
         if len(self.image_names) < self.num_images or self.num_images == -1:

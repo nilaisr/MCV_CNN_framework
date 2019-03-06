@@ -1,7 +1,7 @@
 # Problem type
 problem_type                = 'segmentation'  # Option: ['segmentation','classification','detection']
 # Model
-model_type                  = 'FCN8'          # Options: ['DenseNetFCN', 'FCN8', 'FCN8atOnce' 'VGG16']
+model_type                  = 'VGG16'          # Options: ['DenseNetFCN', 'FCN8', 'FCN8atOnce' 'VGG16']
     ### DenseNetFCN options ####
 model_blocks                = 5               # Number of block densenetFCN_Custom only
 model_layers                = 4               # Number of layers per block densenetFCN_Custom only
