@@ -1,7 +1,10 @@
 import numpy as np
 import cv2 as cv
 import matplotlib
-import StringIO
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
