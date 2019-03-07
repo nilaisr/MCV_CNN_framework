@@ -136,7 +136,7 @@ class SimpleTrainer(object):
                 self.train_loss.update(float(self.loss.cpu().item()), N)
                 confm = compute_confusion_matrix(predictions, self.labels.cpu().data.numpy(), self.cf.num_classes,
                                                  self.cf.void_class)
-                self.confm_list = map(operator.add, self.confm_list, confm)
+                self.confm_list = self.confm_list + confm
 
                 if self.cf.normalize_loss:
                     self.stats.train.loss = self.train_loss.avg
