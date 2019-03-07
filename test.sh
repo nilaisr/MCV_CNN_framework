@@ -7,7 +7,6 @@
 #SBATCH -o ../../logs/%x_%u_%j.out # File to which STDOUT will be written
 #SBATCH -e ../../logs/%x_%u_%j.err # File to which STDERR will be written
 #SBATCH -q masterhigh
-#SBATCH --job-name group07W1
+#SBATCH --job-name 07W2
 
-
-python main.py --config_file config/configFile.yml --exp_name Test1
+python3 main.py --config_file config/configFile.yml --exp_name Test1
