@@ -96,7 +96,7 @@ class ProgressBar:
         list_lens = []
 
         c = os.popen('stty size', 'r').read().split()
-        if c is None:
+        if len(c) == 0:
             columns = 80
         else:
             rows, columns = c
