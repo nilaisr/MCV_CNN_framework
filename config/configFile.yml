@@ -16,6 +16,7 @@ output_model_path: None            # Path to store the model using model_name [N
 
 # Loss type
 loss_type: 'cross_entropy_segmentation' # options: ['cross_entropy_segmentation','focal_segmentation']
+normalize_loss              : True
 
 # General parameters
 
