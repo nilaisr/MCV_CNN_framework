@@ -25,7 +25,7 @@ class CrossEntropyLoss2d(Semantic_Loss):
         # mask = (targets != self.ignore_index)
         # targets = targets[mask]
         #
-        # targets = targets.view(-1)
+        targets = targets.view(-1)
         #
         # loss = F.nll_loss(log_p, targets, weight=None, size_average=False)
         #
