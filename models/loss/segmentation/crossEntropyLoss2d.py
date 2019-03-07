@@ -33,7 +33,10 @@ class CrossEntropyLoss2d(Semantic_Loss):
         #    loss /= mask.data.sum()
         loss_fn_ = torch.nn.NLLLoss2d(weight=None, size_average=True,
                                       ignore_index=self.ignore_index)
-
+        print("************")
+        print(inputs)
+        print("-------------")
+        print(targets)
         loss = loss_fn_(F.log_softmax(inputs), targets)
         return loss#.mean()
 
