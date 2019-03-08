@@ -65,6 +65,8 @@ class Model_builder():
         # classification networks
         elif self.cf.model_type.lower() == 'vgg16':
             self.net = VGG16(self.cf, num_classes=self.cf.num_classes, pretrained=self.cf.basic_pretrained_model).cuda()
+        elif self.cf.model_type.lower() == 'g07net':
+            self.net = G07Net(self.cf, num_classes=self.cf.num_classes, pretrained=self.cf.basic_pretrained_model).cuda()
         else:
             raise ValueError(self.cf.model_type.lower() + ' Unknown model')
 
