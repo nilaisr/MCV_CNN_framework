@@ -43,15 +43,12 @@ grayscale: False #Use this option to convert to rgb a grascale dataset
 
 # Dataset properties
 
-train_dataset_path          : '/home/mcv/datasets/M5/classification/KITTI/train'
-valid_dataset_path          : '/home/mcv/datasets/M5/classification/KITTI/valid'
-test_dataset_path           : '/home/mcv/datasets/M5/classification/KITTI/test'
-train_images_txt            : null
-train_gt_txt                : null
-valid_images_txt            : null
-valid_gt_txt                : null
-test_images_txt             : null
-test_gt_txt                 : null
+train_images_txt            : '/home/mcv/datasets/M5/classification/KITTI/train_images.txt'
+train_gt_txt                : '/home/mcv/datasets/M5/classification/KITTI/train_labels.txt'
+valid_images_txt            : '/home/mcv/datasets/M5/classification/KITTI/valid_images.txt'
+valid_gt_txt                : '/home/mcv/datasets/M5/classification/KITTI/valid_labels.txt'
+test_images_txt             : '/home/mcv/datasets/M5/classification/KITTI/test_images.txt'
+test_gt_txt                 : '/home/mcv/datasets/M5/classification/KITTI/test_labels.txt'
 
 labels  : null
 map_labels  : null
