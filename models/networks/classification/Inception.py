@@ -8,7 +8,7 @@ import math
 class Inception(Net):
 
     def __init__(self, cf, num_classes=21, pretrained=False, net_name='inception'):
-        super(AlexNet, self).__init__(cf)
+        super(Inception, self).__init__(cf)
 
         self.url = 'http://datasets.cvc.uab.es/models/pytorch/basic_vgg16.pth'
         self.pretrained = pretrained

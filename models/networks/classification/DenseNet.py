@@ -8,7 +8,7 @@ import math
 class DenseNet(Net):
 
     def __init__(self, cf, num_classes=21, pretrained=False, net_name='densenet'):
-        super(AlexNet, self).__init__(cf)
+        super(DenseNet, self).__init__(cf)
 
         self.url = 'http://datasets.cvc.uab.es/models/pytorch/basic_vgg16.pth'
         self.pretrained = pretrained

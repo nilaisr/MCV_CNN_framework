@@ -8,7 +8,7 @@ import math
 class ResNet(Net):
 
     def __init__(self, cf, num_classes=21, pretrained=False, net_name='resnet'):
-        super(AlexNet, self).__init__(cf)
+        super(ResNet, self).__init__(cf)
 
         self.url = 'http://datasets.cvc.uab.es/models/pytorch/basic_vgg16.pth'
         self.pretrained = pretrained
