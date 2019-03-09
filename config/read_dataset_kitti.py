@@ -2,7 +2,7 @@ from os import listdir
 
 dataset_dir = '/home/grupo07/mcv/datasets/M5/classification/KITTI/'
 
-save_dir = '/home/grupo07/M5/MCV_CNN_framework/'
+save_dir = '/home/grupo07/M5/MCV_CNN_framework/kitti_txt/'
 
 f = open(save_dir+'train_images.txt',"w+")
 
