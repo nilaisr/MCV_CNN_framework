@@ -9,4 +9,4 @@
 #SBATCH -q masterhigh
 #SBATCH --job-name 07W2
 
-python3 config/read_dataset_kitti.py ##--config_file config/configFile.yml --exp_name Test1
+python3 main.py --config_file config/kitti_configFile.yml --exp_name Test1_kitti
