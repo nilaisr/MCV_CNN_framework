@@ -50,8 +50,9 @@ valid_gt_txt                : '/home/grupo07/M5/MCV_CNN_framework/kitti_txt/vali
 test_images_txt             : '/home/grupo07/M5/MCV_CNN_framework/kitti_txt/test_images.txt'
 test_gt_txt                 : '/home/grupo07/M5/MCV_CNN_framework/kitti_txt/test_gt.txt'
 
-labels  : null
-map_labels  : null
+labels  : !!python/tuple ['background', 'Car', 'Van', 'Truck', 'Pedestrian','Person_sitting', 'Cyclist', 'Tram']
+map_labels: !!python/dict {'background': 0, 'Car': 1, 'Van': 2, 'Truck': 3, 'Pedestrian': 4,'Person_sitting': 5, 'Cyclist': 6, 'Tram': 7}
+
 num_classes : 46
 shuffle: True
 void_class: 255   # void id or value on the image
