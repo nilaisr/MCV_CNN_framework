@@ -14,6 +14,8 @@ from models.networks.segmentation.deeplabv2_resnet import MS_Deeplab
 from models.networks.detection.ssd import SSD300
 from models.networks.detection.ssd import SSD512
 from models.networks.classification.VGG16 import VGG16
+from models.networks.classification.SqueezeNet import SqueezeNet
+
 # from models.networks.detection.rpn import RPN
 from models.loss.loss_builder import Loss_Builder
 from models.optimizer.optimizer_builder import Optimizer_builder
@@ -67,6 +69,8 @@ class Model_builder():
             self.net = VGG16(self.cf, num_classes=self.cf.num_classes, pretrained=self.cf.basic_pretrained_model).cuda()
         elif self.cf.model_type.lower() == 'g07net':
             self.net = G07Net(self.cf, num_classes=self.cf.num_classes, pretrained=self.cf.basic_pretrained_model).cuda()
+        elif self.cf.model_type.lower() == 'squeezenet':
+            self.net = SqueezeNet(self.cf, num_classes=self.cf.num_classes, pretrained=self.cf.basic_pretrained_model).cuda()
         else:
             raise ValueError(self.cf.model_type.lower() + ' Unknown model')
 
