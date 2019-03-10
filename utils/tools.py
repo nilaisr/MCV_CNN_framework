@@ -1,10 +1,7 @@
 import numpy as np
 import cv2 as cv
 import matplotlib
-try:
-    from StringIO import StringIO
-except ImportError:
-    from io import StringIO
+from io import BytesIO
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
@@ -26,7 +23,7 @@ def confm_metrics2image(conf_matrix,names=None):
             else:
                 conf_matrix[i][j] = (conf_matrix[i][j]) / float(sum_row)
 
-    img = StringIO.StringIO()
+    img = BytesIO()
     plt.ioff()
     plt.cla()
     plt.clf()
