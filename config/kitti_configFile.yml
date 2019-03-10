@@ -57,7 +57,7 @@ shuffle: True
 void_class: 255   # void id or value on the image
 
 # Training
-epochs: 2     # Max number of epochs, use 0 to save directly a model, useful to make conversions
+epochs: 25     # Max number of epochs, use 0 to save directly a model, useful to make conversions
 initial_epoch: 1     # Defines the starting epoch number
 valid_samples_epoch: -1    # Number of validation images used to validate an epoch
 
