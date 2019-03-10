@@ -36,7 +36,7 @@ def confm_metrics2image(conf_matrix,names=None):
     plt.title('Confusion Matrix')
 
     plt.xticks(range(nLabels),plt_names, rotation=90)
-    ystick = zip(plt_names, [conf_matrix[i][i] for i in range(nLabels)])
+    ystick = list(zip(plt_names, [conf_matrix[i][i] for i in range(nLabels)]))
     ystick_str = [str(ystick[i][0]) + '(%.2f)' % ystick[i][1] for i in range(nLabels)]
 
     plt.yticks(range(nLabels), ystick_str)
