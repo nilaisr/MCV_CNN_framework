@@ -13,10 +13,13 @@
 
 
 ### Overleaf article
-(https://www.overleaf.com/read/zbtvbhpxzwwx)
+(http://bit.ly/2CbLbEq)
 
+### Google Slides
+(http://bit.ly/2Hd15m0)
 
-
+### Google Drive, Weights of the models
+()
 
 ## VGG summary
 
