@@ -19,7 +19,7 @@ This project is divided in three independent parts or stages, Object Recognition
 (http://bit.ly/2Hd15m0)
 
 ### Google Drive, Weights of the models
-(TODO)
+(https://drive.google.com/open?id=1AyNBKUyOUVAb3ow-_CWKRhQtB5kVna1e)
 
 ## Completed tasks
 
