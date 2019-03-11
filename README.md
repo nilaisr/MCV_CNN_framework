@@ -19,10 +19,51 @@ This project is divided in three independent parts or stages, Object Recognition
 (http://bit.ly/2Hd15m0)
 
 ### Google Drive, Weights of the models
-()
+(TODO)
 
-## VGG summary
+## Completed tasks
 
+- [x] (a) Run the provided code & transfer learning
+- [x] (b) Train a network on another dataset
+- [x] (c) Implement a new Network
+- [x] (e) Report showing the achieved results
+
+## Implementation
+
+- Run the provided code:
+	- VGG16 with TT100K dataset.
+	- Transfer learning to KITTI dataset.
+- Implement NEw Network:
+	- SqueezeNet
+
+## Results
+### Acc
+
+| Datasets | Networks  | train  | val   | test  |
+|----------|-----------|--------|-------|-------|
+| TT100k   | VGG-16    | -      | -     | -     |
+|          | SqueezeNe | -      | -     | -     |
+| KITTI    | VGG-16    | -      | -     | -     |
+|          | SqueezeNe | -      | -     | -     |
+
+### Loss
+
+| Datasets | Networks  | train  | val   | test  |
+|----------|-----------|--------|-------|-------|
+| TT100k   | VGG-16    | -      | -     | -     |
+|          | SqueezeNe | -      | -     | -     |
+| KITTI    | VGG-16    | -      | -     | -     |
+|          | SqueezeNe | -      | -     | -     |
+
+
+
+## How to run it
+`python3 main.py --config_file config/configFile.yml --exp_name experiment`
+
+Specifying the configuration file wanted and an experiment name for the results folder.
+
+## Papers Research
+### VGG summary 
 __*Simonyan, Karen, and Andrew Zisserman. "Very deep convolutional networks for large-scale image recognition." arXiv preprint arXiv:1409.1556 (2014).*__
 
 The ConvNets presented in this paper is more accurate than previous ones that achieve state-of-the-art accuracy on ILSVRC, and are also applicable to other image recognition datasets.
@@ -38,8 +79,7 @@ Although the network proposed has a large number of parameters it requires less 
 The model generalizes well with a wide range of datasets and tasks, matching or outperforming other recognition pipelines of more complexity build arround less deep image representations. This confirms the relevance of depth in visual representations.
 
 
- 
-## Inception-v4 summary
+### Inception-v4 summary
 
 __*Szegedy, Christian, et al. "Inception-v4, inception-resnet and the impact of residual connections on learning." Thirty-First AAAI Conference on Artificial Intelligence. 2017.*__
  
