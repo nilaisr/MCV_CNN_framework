@@ -33,7 +33,7 @@ This project is divided in three independent parts or stages, Object Recognition
 - Run the provided code:
 	- VGG16 with TT100K dataset.
 	- Transfer learning to KITTI dataset.
-- Implement NEw Network:
+- Implement NEW Network:
 	- SqueezeNet
 
 ## Results
@@ -41,19 +41,21 @@ This project is divided in three independent parts or stages, Object Recognition
 
 | Datasets | Networks  | train  | val   | test  |
 |----------|-----------|--------|-------|-------|
-| TT100k   | VGG-16    | -      | -     | -     |
-|          | SqueezeNe | -      | -     | -     |
-| KITTI    | VGG-16    | -      | -     | -     |
-|          | SqueezeNe | -      | -     | -     |
+| TT100k   | VGG-16    | 96.19%      | 96.19%     | 96.50%     |
+|          | VGG-16 <br> Preprocessing   | 96.19%      | 96.51%     | 96.51%     |
+|          | SqueezeNet | 95.68%      | 95.66%     | 95.66%     |
+| KITTI    | VGG-16    | 98.55%      | 98.10%     | 98.25%     |
+|          | VGG-16 <br> Preprocessing   | 99.01%      | 98.52%     | 98.48%     |
 
 ### Loss
 
 | Datasets | Networks  | train  | val   | test  |
 |----------|-----------|--------|-------|-------|
-| TT100k   | VGG-16    | -      | -     | -     |
-|          | SqueezeNe | -      | -     | -     |
-| KITTI    | VGG-16    | -      | -     | -     |
-|          | SqueezeNe | -      | -     | -     |
+| TT100k   | VGG-16    | 3.4837      | 3.4837     | 0.0815     |
+|          | VGG-16 <br> Preprocessing   | 3.4792     | 0.0813     | 0.0813     |
+|          | SqueezeNet | 3.8286      | 0.0983     | 0.0983     |
+| KITTI    | VGG-16    | 3.654      | 0.0876     | 0.0876     |
+|          | VGG-16 <br> Preprocessing | 3.746      | 0.0934     | 0.0934     |
 
 
 
