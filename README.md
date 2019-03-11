@@ -58,8 +58,8 @@ This project is divided in three independent parts or stages, Object Recognition
 
 
 ## How to run it
-
-
+`python3 main.py --config_file config/configFile.yml --exp_name experiment`
+Specifying the configuration file wanted and an experiment name for the results folder.
 
 ## Papers Research
 ### VGG summary 
