@@ -1,4 +1,4 @@
-# Scene Understanding for Autonomous Vehicles
+[Network summary]# Scene Understanding for Autonomous Vehicles
 
 ## GROUP 07
 
@@ -13,12 +13,12 @@
 This project is divided in three independent parts or stages, Object Recognition, Object Detection and Image Semantic Segmentation. They are not connectedin the sense that all together form a complete system for one sole purpose. Instead, theyare actually three parts obtaining increasingly more complex results towards one sameend, understand an scene on the basis of the objects it is composed of.
 
 
-### VGG summary
-(docs/VGG/README.md)
+### VGG
+[Network summary](docs/VGG/README.md)
 
 
-### VGG summary
-(docs/Inception-ResNet/README.md)
+### Inception-ResNet
+[Network summary](docs/Inception-ResNet/README.md)
 
 
 
@@ -46,6 +46,13 @@ This project is divided in three independent parts or stages, Object Recognition
 - Implement NEW Network:
 	- SqueezeNet
 
+
+## How to run it
+`python3 main.py --config_file config/configFile.yml --exp_name experiment`
+
+Specifying the configuration file wanted and an experiment name for the results folder.
+
+
 ## Results
 ### Acc
 
@@ -68,10 +75,3 @@ This project is divided in three independent parts or stages, Object Recognition
 |          | SqueezeNet <br> Preprocessing | 3.8286      | 0.0983     | 0.0962     |
 | KITTI    | VGG-16    | 3.654      | 0.0876     | 0.0876     |
 |          | VGG-16 <br> Preprocessing | 3.746      | 0.0934     | 0.0934     |
-
-
-
-## How to run it
-`python3 main.py --config_file config/configFile.yml --exp_name experiment`
-
-Specifying the configuration file wanted and an experiment name for the results folder.
