@@ -12,6 +12,16 @@
 ### Project summary
 This project is divided in three independent parts or stages, Object Recognition, Object Detection and Image Semantic Segmentation. They are not connectedin the sense that all together form a complete system for one sole purpose. Instead, theyare actually three parts obtaining increasingly more complex results towards one sameend, understand an scene on the basis of the objects it is composed of.
 
+
+### VGG summary
+(docs/VGG/README.md)
+
+
+### VGG summary
+(docs/Inception-ResNet/README.md)
+
+
+
 ### Overleaf article
 (http://bit.ly/2CbLbEq)
 
