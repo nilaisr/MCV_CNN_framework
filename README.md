@@ -1,4 +1,4 @@
-[Network summary]# Scene Understanding for Autonomous Vehicles
+# Scene Understanding for Autonomous Vehicles
 
 ## GROUP 07
 
