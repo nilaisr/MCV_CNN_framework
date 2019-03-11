@@ -42,7 +42,7 @@ This project is divided in three independent parts or stages, Object Recognition
 | Datasets | Networks  | train  | val   | test  |
 |----------|-----------|--------|-------|-------|
 | TT100k   | VGG-16    | 96.19%      | 96.19%     | 96.50%     |
-|          | VGG-16 <br> Preprocessing   | 96.19%      | 96.51%     | 96.51%     |
+|          | VGG-16 <br> Preprocessing   | 96.19%      | 96.51%     | 96.21%     |
 |          | SqueezeNet | 95.68%      | 95.66%     | 95.66%     |
 |	   | SqueezeNet <br> Preprocessing | 95.90%      | 95.81%     | 95.91%     |
 | KITTI    | VGG-16    | 98.55%      | 98.10%     | 98.25%     |
@@ -53,7 +53,7 @@ This project is divided in three independent parts or stages, Object Recognition
 | Datasets | Networks  | train  | val   | test  |
 |----------|-----------|--------|-------|-------|
 | TT100k   | VGG-16    | 3.4837      | 3.4837     | 0.0815     |
-|          | VGG-16 <br> Preprocessing   | 3.4792     | 0.0813     | 0.0813     |
+|          | VGG-16 <br> Preprocessing   | 3.4822     | 0.0814     | 0.0731     |
 |          | SqueezeNet | 3.8286      | 0.0983     | 0.0983     |
 |          | SqueezeNet <br> Preprocessing | 3.8286      | 0.0983     | 0.0962     |
 | KITTI    | VGG-16    | 3.654      | 0.0876     | 0.0876     |
