@@ -55,7 +55,7 @@ This project is divided in three independent parts or stages, Object Recognition
 | TT100k   | VGG-16    | 3.4837      | 3.4837     | 0.0815     |
 |          | VGG-16 <br> Preprocessing   | 3.4792     | 0.0813     | 0.0813     |
 |          | SqueezeNet | 3.8286      | 0.0983     | 0.0983     |
-|          | SqueezeNet <br> Preprocessing | 3.8286      | 0.0983     | 0.0982     |
+|          | SqueezeNet <br> Preprocessing | 3.8286      | 0.0983     | 0.0962     |
 | KITTI    | VGG-16    | 3.654      | 0.0876     | 0.0876     |
 |          | VGG-16 <br> Preprocessing | 3.746      | 0.0934     | 0.0934     |
 
