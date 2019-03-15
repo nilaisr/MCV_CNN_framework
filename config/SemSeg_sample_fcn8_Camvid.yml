@@ -3,12 +3,12 @@ problem_type                : 'segmentation'
 # Option: ['segmentation','classification']
 
 # Model
-model_type                  : 'deeplabv3xception'
-# Options: ['deeplabv3xception']
+model_type                  : 'fcn8atonce'
+# Options: ['fcn8atonce']
 
 ### load/store options
 resume_experiment           : False
-pretrained_model            : 'None'
+pretrained_model            : 'basic'
 # 'None': from scratch, 'basic': pretraned from imagenet, 'custom': personal model
 input_model_path            : null
 # Path and pretrained file to load [None uses experiment path and model name by default]
@@ -18,7 +18,7 @@ load_weight_only            : True
 ### Save options
 save_weight_only            : True
 # Recomended true, stores only weights and parameters
-model_name                  : 'deeplabv3plus'
+model_name                  : 'fcn8atonce'
 # Name of the model to store
 output_model_path           : null
 # Path to store the model using model_name [None uses the default experiment path]
@@ -38,7 +38,7 @@ valid_samples               : -1
 #-1 uses all the data available inside the dataset files
 test_samples                : -1
 #-1 uses all the data available inside the dataset files
-train_batch_size            : 3
+train_batch_size            : 1
 valid_batch_size            : 1
 test_batch_size             : 1
 train                       : True
@@ -52,34 +52,32 @@ predict_path_output:
 
 # Image properties
 size_image_test             : null
-resize_image_train          : !!python/tuple [512, 1024]
-resize_image_valid          : !!python/tuple [512, 1024]
+resize_image_train          : null #!!python/tuple [512, 1024]
+resize_image_valid          : null #!!python/tuple [512, 1024]
 resize_image_test           : null #!!python/tuple [512, 1024]
-crop_train                  : null #!!python/tuple [512,1024] #!!python/tuple [320, 320]
+crop_train                  : null #!!python/tuple [720,720] #!!python/tuple [320, 320]
 grayscale                   : False
 #Use this option to convert to rgb a grascale dataset
 
 # Dataset properties
 
-train_images_txt: '/datatmp/Datasets/segmentation/cityscapes/train_images.txt'
-train_gt_txt: '/datatmp/Datasets/segmentation/cityscapes/train_labels.txt'
-valid_images_txt: '/datatmp/Datasets/segmentation/cityscapes/val_images.txt'
-valid_gt_txt: '/datatmp/Datasets/segmentation/cityscapes/val_labels.txt'
-test_images_txt: '/datatmp/Datasets/segmentation/cityscapes/val_images.txt'
-test_gt_txt: '/datatmp/Datasets/segmentation/cityscapes/val_labels.txt'
+train_images_txt: '/home/mcv/datasets/M5/segmentation/camvid/train_images.txt'
+train_gt_txt: '/home/mcv/datasets/M5/segmentation/camvid/train_labels.txt'
+valid_images_txt: '/home/mcv/datasets/M5/segmentation/camvid/val_images.txt'
+valid_gt_txt: '/home/mcv/datasets/M5/segmentation/camvid/val_labels.txt'
+test_images_txt: '/home/mcv/datasets/M5/segmentation/camvid/test_images.txt'
+test_gt_txt: '/home/mcv/datasets/M5/segmentation/camvid/test_labels.txt'
 
-labels                      : !!python/tuple ['road','sidewalk','building','wall','fence','pole','traffic light','traffic, sign',
-                                'vegetation','terrain','sky','person','rider','car','truck','bus','train',
-                                'motorcycle','bicycle']
+labels                      : !!python/tuple ['sky', 'building', 'column_pole', 'road', 'sidewalk', 'tree', 'sign', 'fence', 'car', 'pedestrian', 'byciclist']
 map_labels                  : null
 
-num_classes                 : 19
+num_classes                 : 11
 shuffle                     : True
-void_class                  : 255
+void_class                  : 11
 #void id or value on the image
 
 # Training
-epochs                      : 80
+epochs                      : 50
 #Max number of epochs
 initial_epoch: 1
 #Defines the starting epoch number
@@ -87,14 +85,14 @@ valid_samples_epoch: -1
 # Number of validation images used to validate an epoch
 is_training                 : True
 ### Optimizer ###
-optimizer                   : 'sgd'
+optimizer                   : 'SGD'
 momentum1: 0.9
 momentum2: 0.99
 learning_rate               : 1.0e-3
 learning_rate_bias: 1.0e-3
-weight_decay: 5.0e-4
+weight_decay: 5.0e-5
 ### Scheduler
-scheduler : 'MultiStep'
+scheduler : null
 #['ReduceLROnPlateau','Step','MultiStep','Exponential', None]
 decay : 0.1
 #Learnng rate decay to apply (lr*decay)
@@ -102,16 +100,16 @@ sched_patience: 5
 # ReduceLROnPlateau option: epoch patience without loss change until a lr decrement
 step_size: 20
 #Step option: epoch counter to decrease lr
-milestone: [20 40 60]
+milestone: [10]
 #MultiStep option: define different milestones (epochs) to decrease lr
 ### Save criteria
 save_condition: 'valid_mIoU'
 # ['always','(x)_loss','(x)_mAcc','(x)_mIoU'] x : valid or train_loss
 ### Early Stopping
-early_stopping : True
+early_stopping : False
 stop_condition: 'valid_mIoU'
 # [(x)_loss','(x)_mAcc','(x)_mIoU'] x : valid or train_loss
-patience: 10
+patience: 5
 
 # Image preprocess
 rescale                     : 1. #0.003921569
@@ -122,7 +120,7 @@ std                         : !!python/tuple [1.,1.,1.]
 
 # Data augmentation
 hflips                      : True
-
+random_dist                 : False  # Activate random distortions to the input image [brightness, contrast, saturation]
 
 color_map                   : null
 num_images                  : null
