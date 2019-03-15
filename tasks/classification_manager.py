@@ -24,11 +24,7 @@ class Classification_Manager(SimpleTrainer):
                                                                             100 * self.model.best_stats.val.f1score,
                                                                             self.model.best_stats.val.loss)
 
-<<<<<<< HEAD
-        def validate_epoch(self, valid_set, valid_loader, early_stopping, epoch):
-=======
         def validate_epoch(self, valid_set, valid_loader, early_stopping, epoch, global_bar):
->>>>>>> fde9b6d93589fb9dd252f3f96e7973b61cbe73fd
             if valid_set is not None and valid_loader is not None:
                 # Set model in validation mode
                 self.model.net.eval()
@@ -46,8 +42,6 @@ class Classification_Manager(SimpleTrainer):
 
         def compute_stats(self, confm_list, train_loss):
             TP_list, TN_list, FP_list, FN_list = extract_stats_from_confm(confm_list)
-<<<<<<< HEAD
-=======
             mean_accuracy = compute_accuracy(TP_list, TN_list, FP_list, FN_list)
             mean_precision = compute_precision(TP_list,FP_list)
             mean_recall = compute_recall(TP_list,FN_list)
@@ -59,7 +53,6 @@ class Classification_Manager(SimpleTrainer):
             self.stats.train.f1score = np.nanmean(mean_f1score)
             if train_loss is not None:
                 self.stats.train.loss = train_loss.avg
->>>>>>> fde9b6d93589fb9dd252f3f96e7973b61cbe73fd
 
             tp = np.sum(TP_list)
             tn = np.sum(TN_list)
@@ -86,11 +79,7 @@ class Classification_Manager(SimpleTrainer):
                 # self.writer.add_scalar('metrics/recall', 100. * self.stats.train.recall, epoch)
                 # self.writer.add_scalar('metrics/f1score', 100. * self.stats.train.f1score, epoch)
                 conf_mat_img = confm_metrics2image(self.stats.train.get_confm_norm(), self.cf.labels)
-<<<<<<< HEAD
-                self.writer.add_image('metrics/conf_matrix', conf_mat_img, epoch, dataformats='HWC')
-=======
                 #self.writer.add_image('metrics/conf_matrix', conf_mat_img, epoch)
->>>>>>> fde9b6d93589fb9dd252f3f96e7973b61cbe73fd
 
                 # Save learning rate
                 # self.logger_stats.write(str(self.model.scheduler.get_lr()))    # Step, MultiStep
@@ -104,7 +93,6 @@ class Classification_Manager(SimpleTrainer):
 
         def compute_stats(self, confm_list, val_loss):
             TP_list, TN_list, FP_list, FN_list = extract_stats_from_confm(confm_list)
-<<<<<<< HEAD
             tp = np.sum(TP_list)
             tn = np.sum(TN_list)
             fp = np.sum(FP_list)
@@ -117,7 +105,7 @@ class Classification_Manager(SimpleTrainer):
             self.stats.val.recall = r
             self.stats.val.precision = p
             self.stats.val.f1score = 2 * (r * p) / (r + p)
-=======
+
             mean_accuracy = compute_accuracy(TP_list, TN_list, FP_list, FN_list)
             mean_precision = compute_precision(TP_list,FP_list)
             mean_recall = compute_recall(TP_list,FN_list)
@@ -127,7 +115,6 @@ class Classification_Manager(SimpleTrainer):
             self.stats.val.recall= np.nanmean(mean_recall)
             self.stats.val.precision = np.nanmean(mean_precision)
             self.stats.val.f1score = np.nanmean(mean_f1score)
->>>>>>> fde9b6d93589fb9dd252f3f96e7973b61cbe73fd
             if val_loss is not None:
                 self.stats.val.loss = val_loss.avg
 
@@ -148,11 +135,8 @@ class Classification_Manager(SimpleTrainer):
                 # self.writer.add_scalar('metrics/recall', 100. * self.stats.val.recall, epoch)
                 # self.writer.add_scalar('metrics/f1score', 100. * self.stats.val.f1score, epoch)
                 conf_mat_img = confm_metrics2image(self.stats.val.get_confm_norm(), self.cf.labels)
-<<<<<<< HEAD
-                self.writer.add_image('metrics/conf_matrix', conf_mat_img, epoch, dataformats='HWC')
-=======
                 #self.writer.add_image('metrics/conf_matrix', conf_mat_img, epoch)
->>>>>>> fde9b6d93589fb9dd252f3f96e7973b61cbe73fd
+
             else:
                 self.logger_stats.write('----------------- Scores summary --------------------\n')
                 self.logger_stats.write(
@@ -170,3 +154,4 @@ class Classification_Manager(SimpleTrainer):
         def write_results(self, predictions, img_name, img_shape):
             msg = img_name[0] + ' ' + str(predictions[0]) + '\n'
             self.f.writelines(msg)
+

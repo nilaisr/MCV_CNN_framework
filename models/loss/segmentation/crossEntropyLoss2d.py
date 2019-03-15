@@ -25,13 +25,13 @@ class CrossEntropyLoss2d(Semantic_Loss):
         # mask = (targets != self.ignore_index)
         # targets = targets[mask]
         #
-        targets = targets.view(-1)
+        #targets = targets.view(-1)
         #
         # loss = F.nll_loss(log_p, targets, weight=None, size_average=False)
         #
         # if self.cf.normalize_loss:
         #    loss /= mask.data.sum()
-        loss_fn_ = torch.nn.NLLLoss2d(weight=None, size_average=True,
+        loss_fn_ = torch.nn.NLLLoss(weight=None, size_average=True,
                                       ignore_index=self.ignore_index)
 
         loss = loss_fn_(F.log_softmax(inputs), targets)

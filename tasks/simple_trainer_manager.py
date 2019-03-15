@@ -7,19 +7,12 @@ import torch
 from torch.autograd import Variable
 from tqdm import tqdm
 
-<<<<<<< HEAD
-from utils.tools import AverageMeter, Early_Stopping
-=======
-sys.path.append('../')
 from utils.tools import AverageMeter, EarlyStopping
-from utils.ProgressBar import ProgressBar
->>>>>>> fde9b6d93589fb9dd252f3f96e7973b61cbe73fd
 from utils.logger import Logger
 from utils.statistics import Statistics
 from utils.messages import Messages
 from metrics.metrics import compute_accuracy, compute_confusion_matrix, extract_stats_from_confm
 from tensorboardX import SummaryWriter
-
 
 
 class SimpleTrainer:
@@ -61,14 +54,6 @@ class SimpleTrainer:
                 early_stopping = EarlyStopping(self.cf)
             else:
                 early_stopping = None
-<<<<<<< HEAD
-=======
-
-            prev_msg = '\nTotal estimated training time...\n'
-            self.global_bar = ProgressBar((self.cf.epochs+1-self.curr_epoch)*(self.train_num_batches+self.val_num_batches), lenBar=20)
-            self.global_bar.set_prev_msg(prev_msg)
-
->>>>>>> fde9b6d93589fb9dd252f3f96e7973b61cbe73fd
 
             # Train process
             for epoch in tqdm(range(self.curr_epoch, self.cf.epochs + 1), desc='Epochs...', file=sys.stdout):
@@ -95,11 +80,7 @@ class SimpleTrainer:
                                                           'train_epoch_' + str(epoch) + '.json'))
 
                 # Validate epoch
-<<<<<<< HEAD
                 self.validate_epoch(valid_set, valid_loader, early_stopping, epoch)
-=======
-                self.validate_epoch(valid_set, valid_loader, early_stopping, epoch, self.global_bar)
->>>>>>> fde9b6d93589fb9dd252f3f96e7973b61cbe73fd
 
                 # Update scheduler
                 if self.model.scheduler is not None:
@@ -152,13 +133,6 @@ class SimpleTrainer:
                     # Save stats
                     self.save_stats_batch((epoch - 1) * self.train_num_batches + i)
 
-<<<<<<< HEAD
-=======
-                    # Update epoch messages
-                    if not self.cf.silent:
-                        self.update_epoch_messages(epoch_bar, self.global_bar, self.train_num_batches, epoch, i)
-
->>>>>>> fde9b6d93589fb9dd252f3f96e7973b61cbe73fd
         def save_stats_epoch(self, epoch):
             # Save logger
             if epoch is not None:
@@ -182,12 +156,7 @@ class SimpleTrainer:
             self.stats.train.acc = np.nanmean(mean_accuracy)
             self.stats.train.loss = float(train_loss.avg.cpu().data)
 
-<<<<<<< HEAD
         def validate_epoch(self, valid_set, valid_loader, early_stopping, epoch):
-=======
-        def validate_epoch(self, valid_set, valid_loader, early_stopping, epoch, global_bar):
-
->>>>>>> fde9b6d93589fb9dd252f3f96e7973b61cbe73fd
             if valid_set is not None and valid_loader is not None:
                 # Set model in validation mode
                 self.model.net.eval()
@@ -200,10 +169,6 @@ class SimpleTrainer:
                     if early_stopping.check(self.stats.train.loss, self.stats.val.loss, self.stats.val.mIoU,
                                             self.stats.val.acc, self.stats.val.f1score):
                         self.stop = True
-<<<<<<< HEAD
-=======
-
->>>>>>> fde9b6d93589fb9dd252f3f96e7973b61cbe73fd
                 # Set model in training mode
                 self.model.net.train()
 
@@ -276,15 +241,7 @@ class SimpleTrainer:
                                                                   np.shape(predictions)[0]),
                                         valid_set.num_images)
 
-<<<<<<< HEAD
         def update_tensorboard(self, inputs, gts, predictions, epoch, indexes, val_len):
-=======
-                # Update messages
-                if not self.cf.silent:
-                    self.update_msg(bar, global_bar)
-
-        def update_tensorboard(self,inputs,gts,predictions,epoch,indexes,val_len):
->>>>>>> fde9b6d93589fb9dd252f3f96e7973b61cbe73fd
             pass
 
         def compute_stats(self, confm_list, val_loss):
