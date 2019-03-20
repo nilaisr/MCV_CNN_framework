@@ -50,9 +50,9 @@ predict_path_output:
 # None uses the default output in the experiment folder /predictions
 
 # Image properties
-resize_image_train: !!python/tuple [224,224] #(320, 640)#(640, 480)
-resize_image_valid: !!python/tuple [224,224] #(320, 640)#(640, 480)
-resize_image_test: !!python/tuple [224,224] #(320, 640)#(640, 480)
+resize_image_train: null #!!python/tuple [224,224] #(320, 640)#(640, 480)
+resize_image_valid: null #!!python/tuple [224,224] #(320, 640)#(640, 480)
+resize_image_test: null #!!python/tuple [224,224] #(320, 640)#(640, 480)
 crop_train: null
 grayscale: False #Use this option to convert to rgb a grascale dataset
 

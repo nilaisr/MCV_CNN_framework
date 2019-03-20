@@ -5,3 +5,4 @@ config/tmp_*
 *.swp
 .idea/*
 *.h
+venv/*
