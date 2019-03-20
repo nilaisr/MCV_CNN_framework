@@ -17,7 +17,7 @@ load_weight_only            : True
 ### Save options
 save_weight_only            : True
 # Recomended true, stores only weights and parameters
-model_name                  : 'fcn8atonce'
+model_name                  : 'deeplabv3xception'
 # Name of the model to store
 output_model_path           : null
 # Path to store the model using model_name [None uses the default experiment path]
@@ -50,16 +50,13 @@ predict_path_output:
 # None uses the default output in the experiment folder /predictions
 
 # Image properties
-size_image_test             : null
-resize_image_train          : null #!!python/tuple [512, 1024]
-resize_image_valid          : null #!!python/tuple [512, 1024]
-resize_image_test           : null #!!python/tuple [512, 1024]
-crop_train                  : null #!!python/tuple [720,720] #!!python/tuple [320, 320]
-grayscale                   : False
-#Use this option to convert to rgb a grascale dataset
+resize_image_train: null #!!python/tuple [224,224] #(320, 640)#(640, 480)
+resize_image_valid: null #!!python/tuple [224,224] #(320, 640)#(640, 480)
+resize_image_test: null #!!python/tuple [224,224] #(320, 640)#(640, 480)
+crop_train: null
+grayscale: False #Use this option to convert to rgb a grascale dataset
 
 # Dataset properties
-
 train_images_txt: '/home/mcv/datasets/M5/segmentation/camvid/train_images.txt'
 train_gt_txt: '/home/mcv/datasets/M5/segmentation/camvid/train_labels.txt'
 valid_images_txt: '/home/mcv/datasets/M5/segmentation/camvid/val_images.txt'
@@ -76,7 +73,7 @@ void_class                  : 255
 #void id or value on the image
 
 # Training
-epochs                      : 50
+epochs                      : 25
 #Max number of epochs
 initial_epoch: 1
 #Defines the starting epoch number
@@ -97,7 +94,7 @@ decay : 0.1
 #Learnng rate decay to apply (lr*decay)
 sched_patience: 5
 # ReduceLROnPlateau option: epoch patience without loss change until a lr decrement
-step_size: 20
+step_size: 10
 #Step option: epoch counter to decrease lr
 milestone: [10]
 #MultiStep option: define different milestones (epochs) to decrease lr
