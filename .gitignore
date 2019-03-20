@@ -2,3 +2,5 @@
 */*.pyc 
 config/tmp_* 
 *.pth
+*.swp
+.idea/*
