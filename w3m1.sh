@@ -13,5 +13,5 @@ sleep 5
 /usr/local/cuda-9.2/samples/bin/x86_64/linux/release/deviceQuery
 nvidia-smi
 cd ~/M5/MCV_CNN_framework
-python main.py --silent --exp_name w3m1 --exp_folder ~/Experiments/segmentation/w3m1 --config_file config/SemSeg_sample_fcn8_Camvid.yml
+python main.py --silent --exp_name w3m1 --exp_folder ~/Experiments/segmentation/w3m1 --config_file config/SemSeg_sample_deeplab_Camvid.yml
  
