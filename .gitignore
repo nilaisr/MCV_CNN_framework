@@ -6,3 +6,4 @@ config/tmp_*
 .idea/*
 *.h
 venv/*
+*.txt

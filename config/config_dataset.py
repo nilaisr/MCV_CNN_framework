@@ -6,7 +6,7 @@ parser.add_argument('--dataset_name', type=str, default='',help='')
 if __name__ == "__main__":
     FLAGS, unparsed = parser.parse_known_args()
     dataset = FLAGS.dataset_name
-    path = "/home/grupo07/mcv/datasets/M5/segmentation/"+dataset
+    path = "/home/mcv/datasets/M5/segmentation/"+dataset
     path_to_save = "/home/grupo07/M5/MCV_CNN_framework/datasets_txt"
     arr = os.listdir(path)
 

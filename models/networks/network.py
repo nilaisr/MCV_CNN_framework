@@ -52,6 +52,7 @@ class Net(nn.Module):
         if not os.path.exists(self.cf.basic_models_path):
             os.makedirs(self.cf.basic_models_path)
         filename = os.path.join(self.cf.basic_models_path, 'basic_'+ self.net_name.lower() +'.pth')
+        print(filename, " ..... ")
         self.download_if_not_exist(filename)
         self.restore_weights(filename)
 

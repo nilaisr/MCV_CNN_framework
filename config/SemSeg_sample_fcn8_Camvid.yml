@@ -119,7 +119,7 @@ std                         : !!python/tuple [1.,1.,1.]
 #[0.18696375, 0.19017339, 0.18720214]#[0.21090189, 0.21090189, 0.21090189]
 
 # Data augmentation
-hflips                      : True
+hflips                      : False
 random_dist                 : False  # Activate random distortions to the input image [brightness, contrast, saturation]
 
 color_map                   : null

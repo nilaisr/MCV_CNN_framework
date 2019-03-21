@@ -7,7 +7,7 @@ model_type                  : 'deeplabv3xception'
 
 ### load/store options
 resume_experiment           : False
-pretrained_model            : 'basic'
+pretrained_model            : 'None'
 # 'None': from scratch, 'basic': pretraned from imagenet, 'custom': personal model
 input_model_path            : null
 # Path and pretrained file to load [None uses experiment path and model name by default]
@@ -37,9 +37,9 @@ valid_samples               : -1
 #-1 uses all the data available inside the dataset files
 test_samples                : -1
 #-1 uses all the data available inside the dataset files
-train_batch_size            : 8
-valid_batch_size            : 8
-test_batch_size             : 8
+train_batch_size            : 1
+valid_batch_size            : 1
+test_batch_size             : 1
 train                       : True
 validation                  : True
 test                        : True
@@ -69,7 +69,7 @@ map_labels                  : null
 
 num_classes                 : 11
 shuffle                     : True
-void_class                  : 255
+void_class                  : 11
 #void id or value on the image
 
 # Training
