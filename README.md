@@ -40,7 +40,7 @@ During this week we have focused on the task of semantic segmentation in images.
 	- Data augmentation
 
 ## How to run it
-`python main.py --config_file config/SemSeg_sample_Net_dataset.yml --exp_name experiment`
+`python main.py --silent --exp_name net_dataset  --exp_folder ~/Experiments/segmentation/ --config_file config/SemSeg_sample_net_dataset.yml`
 
 Specifying the configuration file wanted and an experiment name for the results folder.
 
