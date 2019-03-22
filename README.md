@@ -16,6 +16,16 @@ This project is divided in three independent parts or stages, Object Recognition
 ### Abstract
 During this week we have focused on the task of semantic segmentation in images. Semantic Segmentation consist on detecting the exact pixel areas different objects occupy in the image. We have train different networks (fcn8) in different datasets (Camvid, KITTI...) in order to test their performance. We also applied data augmentation over the dataset images. Two papers about semantic segmentation needed to be chosen and read as well.
 
+## Completed tasks
+
+- [x] (a) Run the provided code
+- [x] (b) Read two papers
+- [x] (c) Implement a new Network
+    - [x] Using an existing PyTorch implementation.
+- [x] (d) Train the network on a different datasets
+- [x] (e) Boost the performance of our network
+- []  (f) Write report
+
 ## Implementation
 
 - Run the provided code:
