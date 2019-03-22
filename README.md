@@ -39,6 +39,11 @@ During this week we have focused on the task of semantic segmentation in images.
 - Boost the performance of the networks:
 	- Data augmentation
 
+## How to run it
+`python main.py --config_file config/SemSeg_sample_Net_dataset.yml --exp_name experiment`
+
+Specifying the configuration file wanted and an experiment name for the results folder.
+
 ## Week 2
 
 ### VGG
