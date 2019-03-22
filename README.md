@@ -14,10 +14,20 @@ This project is divided in three independent parts or stages, Object Recognition
 
 ## Week 3
 ### Abstract
-During this week we have focused on the task of semantic segmentation in images. We have train different networks (fcn8) in different datasets (Camvid, KITTI...) in order to test their performance. We also applied data augmentation over the dataset images. Two papers about semantic segmentation needed to be chosen and read as well.
+During this week we have focused on the task of semantic segmentation in images. Semantic Segmentation consist on detecting the exact pixel areas different objects occupy in the image. We have train different networks (fcn8) in different datasets (Camvid, KITTI...) in order to test their performance. We also applied data augmentation over the dataset images. Two papers about semantic segmentation needed to be chosen and read as well.
 
 ## Implementation
 
+- Run the provided code:
+	- Fcn8 with Camvid dataset.
+- Implement Networks:
+    - Using an existing PyTorch implementation:
+    	-DeepLabv3_xception
+- Train each network with the following datasets:
+	- Camvid
+	- KITTI 
+- Boost the performance of the networks:
+	- Data augmentation
 
 ## Week 2
 
