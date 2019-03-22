@@ -24,7 +24,7 @@ During this week we have focused on the task of semantic segmentation in images.
     - [x] Using an existing PyTorch implementation.
 - [x] (d) Train the network on a different datasets
 - [x] (e) Boost the performance of our network
-- []  (f) Write report
+- [ ]  (f) Write report
 
 ## Implementation
 
