@@ -12,6 +12,14 @@
 ### Project summary
 This project is divided in three independent parts or stages, Object Recognition, Object Detection and Image Semantic Segmentation. They are not connectedin the sense that all together form a complete system for one sole purpose. Instead, theyare actually three parts obtaining increasingly more complex results towards one sameend, understand an scene on the basis of the objects it is composed of.
 
+## Week 3
+### Abstract
+During this week we have focused on the task of semantic segmentation in images. We have train different networks (fcn8) in different datasets (Camvid, KITTI...) in order to test their performance. We also applied data augmentation over the dataset images. Two papers about semantic segmentation needed to be chosen and read as well.
+
+## Implementation
+
+
+## Week 2
 
 ### VGG
 [Network summary](docs/VGG/README.md)
