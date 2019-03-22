@@ -22,7 +22,7 @@ During this week we have focused on the task of semantic segmentation in images.
 	- Fcn8 with Camvid dataset.
 - Implement Networks:
     - Using an existing PyTorch implementation:
-    		-DeepLabv3_xception
+		- DeepLabv3_xception
 - Train each network with the following datasets:
 	- Camvid
 	- KITTI 
