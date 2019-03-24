@@ -8,3 +8,7 @@ tensorboardx
 wget
 configparser
 ruamel.yaml
+torch
+torchvision
+scikit-learn
+tqdm

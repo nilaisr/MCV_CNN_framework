@@ -7,3 +7,6 @@ config/tmp_*
 *.h
 venv/*
 *.txt
+*.pth
+.idea/
+venv/

@@ -95,7 +95,7 @@ class Configuration():
 
         parser.add_argument("--exp_folder",
                             type=str,
-                            default='/home/jlgomez/Experiments/',
+                            default='/home/grupo07/Experiments/',
                             help="Experiment folder path")
 
         parser.add_argument("--problem_type",
