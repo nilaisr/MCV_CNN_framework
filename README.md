@@ -21,7 +21,7 @@ During this week we have focused on the task of semantic segmentation in images.
 - [x] (a) Run the provided code
 - [ ] (b) Read two papers
 - [x] (c) Implement a new Network
-    - [ ] Using an existing PyTorch implementation.
+    - [x] Using an existing PyTorch implementation.
 - [x] (d) Train the network on a different datasets
 - [x] (e) Boost the performance of our network
 - [ ]  (f) Write report
@@ -32,7 +32,7 @@ During this week we have focused on the task of semantic segmentation in images.
 	- Fcn8 with Camvid dataset.
 - Implement Networks:
     - Using an existing PyTorch implementation:
-		- DeepLabv3_xception
+		- DeepLabv3_plus
 - Train each network with the following datasets:
 	- Camvid
 	- KITTI 
