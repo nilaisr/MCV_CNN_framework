@@ -1,7 +1,7 @@
-### DEEPLAB summary 
+### DeepLabv3+ summary 
 __*Chen, Liang-Chieh, et al. "Rethinking atrous convolution for semantic image segmentation." arXiv preprint arXiv:1706.05587 (2017).*__
 
-This paper revisit atours convolution, layers used in orther to adjust the filter's field of a view as well as control theresolution of feature responses
+This paper revisit atours convolution, layers used in order to adjust the filter's field of a view as well as control theresolution of feature responses
 
 Deeplabv3+ framework uses an encoder-decoder structure. The authors have introduced the atrous separable convolution composed of a depthwise convolution (spatial convolution for each channel of the input) and pointwise convolution (1x1 convolution with the depthwise convolution as input).
 
