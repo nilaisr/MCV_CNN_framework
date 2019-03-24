@@ -14,7 +14,7 @@ This project is divided in three independent parts or stages, Object Recognition
 
 ## Week 3
 ### Abstract
-During this week we have focused on the task of semantic segmentation in images. Semantic Segmentation consist on detecting the exact pixel areas different objects occupy in the image. We have train different networks (fcn8) in different datasets (Camvid, KITTI...) in order to test their performance. We also applied data augmentation over the dataset images. Two papers about semantic segmentation needed to be chosen and read as well.
+During this week we have focused on the task of semantic segmentation in images. Semantic Segmentation consist on detecting the exact pixel areas different objects -belonging to the same class- occupy in the image. We have train different networks (fcn8, deeplabv3plus) in different datasets (Camvid, KITTI and Synthia) in order to test their performance. We also applied data augmentation over the dataset images. Two papers about semantic segmentation needed to be chosen and read as well.
 
 ## Completed tasks
 
