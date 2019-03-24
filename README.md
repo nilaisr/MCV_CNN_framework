@@ -12,19 +12,27 @@
 ### Project summary
 This project is divided in three independent parts or stages, Object Recognition, Object Detection and Image Semantic Segmentation. They are not connectedin the sense that all together form a complete system for one sole purpose. Instead, theyare actually three parts obtaining increasingly more complex results towards one sameend, understand an scene on the basis of the objects it is composed of.
 
-## Week 3
+# Week 3
 ### Abstract
 During this week we have focused on the task of semantic segmentation in images. Semantic Segmentation consist on detecting the exact pixel areas different objects -belonging to the same class- occupy in the image. We have train different networks (fcn8, deeplabv3plus) in different datasets (Camvid, KITTI and Synthia) in order to test their performance. We also applied data augmentation over the dataset images. Two papers about semantic segmentation needed to be chosen and read as well.
 
 ## Completed tasks
 
 - [x] (a) Run the provided code
-- [ ] (b) Read two papers
+- [x] (b) Read two papers
 - [x] (c) Implement a new Network
     - [x] Using an existing PyTorch implementation.
 - [x] (d) Train the network on a different datasets
 - [x] (e) Boost the performance of our network
-- [ ]  (f) Write report
+- [x]  (f) Write report
+
+## Summary of papers
+
+### FC Semantic Segmentation
+[Network summary](docs/FC-Semantic/README.md)
+
+### DeepLabV3+
+[Network summary](docs/deeplab/README.md)
 
 ## Implementation
 
@@ -44,7 +52,7 @@ During this week we have focused on the task of semantic segmentation in images.
 
 Specifying the configuration file wanted and an experiment name for the results folder.
 
-## Week 2
+# Week 2
 
 ### VGG
 [Network summary](docs/VGG/README.md)
