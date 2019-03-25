@@ -39,7 +39,11 @@ During this week we have focused on the task of semantic segmentation in images.
 [Network summary](docs/deeplab/README.md)
 
 ### Google Slides
-(https://bit.ly/2usnfIQ)
+[Slides](https://bit.ly/2usnfIQ)
+
+### Model weights
+	- [DeeplabV3Plus KITTI](https://drive.google.com/open?id=1bHkuiKvj0OEsFIITTP-vT8HU2bl9qGM_)
+	- [FCN8 KITTI](https://drive.google.com/open?id=1JGMv4aGmpFHdrWICZIra_rp64a_WeQ53)
 
 ## Implementation
 
@@ -51,8 +55,10 @@ During this week we have focused on the task of semantic segmentation in images.
 - Train each network with the following datasets:
 	- Camvid
 	- KITTI 
+	- Synthia
 - Boost the performance of the networks:
 	- Data augmentation
+	- Number of epochs
 
 ## How to run it
 `python main.py --silent --exp_name net_dataset  --exp_folder ~/Experiments/segmentation/ --config_file config/SemSeg_sample_net_dataset.yml`
