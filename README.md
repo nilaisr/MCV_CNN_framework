@@ -42,8 +42,8 @@ During this week we have focused on the task of semantic segmentation in images.
 [Slides](https://bit.ly/2usnfIQ)
 
 ### Model weights
-	- [DeeplabV3Plus KITTI](https://drive.google.com/open?id=1bHkuiKvj0OEsFIITTP-vT8HU2bl9qGM_)
-	- [FCN8 KITTI](https://drive.google.com/open?id=1JGMv4aGmpFHdrWICZIra_rp64a_WeQ53)
+- [DeeplabV3Plus KITTI](https://drive.google.com/open?id=1bHkuiKvj0OEsFIITTP-vT8HU2bl9qGM_)
+- [FCN8 KITTI](https://drive.google.com/open?id=1JGMv4aGmpFHdrWICZIra_rp64a_WeQ53)
 
 ## Implementation
 
