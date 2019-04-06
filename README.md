@@ -18,13 +18,22 @@ This project is divided in three independent parts or stages, Object Recognition
 
 # Week 4
 ### Abstract
-TODO
-
+This week we had to chose an already existing framework to deal with object detection inside the image. Object detection consist in find and classificate multiple objects inside images. The network selected for this task was the YOLOv3 implemented with Darknet. The datasets tested are the COCO that was already in the dataloader and the TT100K and Udacity that we had to adapt. Then in order to emprove the results, a data augmentation were implemented. 
 ## Code
 [YoloV3 Framework](https://github.com/manurare/yolov3.git)
 
-### How it works
-TODO
+## How to run it
+Install requriements.txt
+
+In order to train: 
+    
+Download dataset of COCO
+
+    sh data/get_coco_dataset.sh
+
+In order to predict:
+
+    python3 test.py --cfg cfg/yolov3.cfg --data-cfg data/coco.data --weights weights/yolov3.weights --dataset_name coco_predict_valid
 
 ## Completed tasks
 
@@ -38,13 +47,27 @@ TODO
 - [x] (e) Write report
 
 
+## Implementation
+
+- Run the download framework:
+	- YOLOv3 with COCO dataset
+- Train each network with the following datasets:
+	- Camvid
+	- Synthia
+- Boost the performance of the networks:
+	- Data augmentation
+	- Number of epochs
+	
 ## Summary of papers
 
 ### Region-based Convolutional Network 
 [Network summary](docs/RCNN/README.md)
 
-### RYou Only Look Once Network 
+### You Only Look Once Network 
 [Network summary](docs/YOLO/README.md)
+
+### Google Slides
+[Sides](https://docs.google.com/presentation/d/1y6tMXZfgE9osZ900mdlckLrv19ThAQ9OXcoHZ7ij84g/edit?usp=sharing)
 
 # Week 3
 ### Abstract
