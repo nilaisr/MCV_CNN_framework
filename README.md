@@ -16,6 +16,36 @@ This project is divided in three independent parts or stages, Object Recognition
 (http://bit.ly/2CbLbEq)
 
 
+# Week 4
+### Abstract
+TODO
+
+## Code
+[YoloV3 Framework](https://github.com/manurare/yolov3.git)
+
+### How it works
+TODO
+
+## Completed tasks
+
+- [x] (a) Train an existing object detection network 
+- [x] (b) Read two papers
+- [x] (c) Train the networks on a different dataset
+    - [x] TsingHua-TenCent 100K 
+    - [ ] KITTI
+    - [x] Udacity
+- [x] (d) Boost the performance of our network
+- [x] (e) Write report
+
+
+## Summary of papers
+
+### Region-based Convolutional Network 
+[Network summary](docs/RCNN/README.md)
+
+### RYou Only Look Once Network 
+[Network summary](docs/YOLO/README.md)
+
 # Week 3
 ### Abstract
 During this week we have focused on the task of semantic segmentation in images. Semantic Segmentation consist on detecting the exact pixel areas different objects -belonging to the same class- occupy in the image. We have train different networks (fcn8, deeplabv3plus) in different datasets (Camvid, KITTI and Synthia) in order to test their performance. We also applied data augmentation over the dataset images. Two papers about semantic segmentation needed to be chosen and read as well.
