@@ -52,8 +52,8 @@ In order to predict:
 - Run the download framework:
 	- YOLOv3 with COCO dataset
 - Train each network with the following datasets:
-	- Camvid
-	- Synthia
+	- TT100K
+	- Udacity
 - Boost the performance of the networks:
 	- Data augmentation
 	- Number of epochs
