@@ -69,6 +69,12 @@ In order to predict:
 ### Google Slides
 [Sides](https://docs.google.com/presentation/d/1y6tMXZfgE9osZ900mdlckLrv19ThAQ9OXcoHZ7ij84g/edit?usp=sharing)
 
+
+### Model weights
+- [COCO](https://drive.google.com/file/d/19pDrYT1UXjYzAkKNBkHyfI2zNcXCp3A0/view?usp=sharing)
+- [TT100K](https://drive.google.com/file/d/19Mg59nrzz2VkPAuJqxFcMHMoDz_P9_AC/view?usp=sharing)
+- [Udacity](https://drive.google.com/file/d/1K7wHensMr1inzUDvCKdZr8CJQEPCqSdW/view?usp=sharing)
+
 # Week 3
 ### Abstract
 During this week we have focused on the task of semantic segmentation in images. Semantic Segmentation consist on detecting the exact pixel areas different objects -belonging to the same class- occupy in the image. We have train different networks (fcn8, deeplabv3plus) in different datasets (Camvid, KITTI and Synthia) in order to test their performance. We also applied data augmentation over the dataset images. Two papers about semantic segmentation needed to be chosen and read as well.
