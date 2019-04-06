@@ -51,12 +51,12 @@ In order to predict:
 
 - Run the download framework:
 	- YOLOv3 with COCO dataset
-- Train each network with the following datasets:
+- Train YoloV3 with the following datasets:
 	- TT100K
 	- Udacity
-- Boost the performance of the networks:
+- Boost the performance of the network:
 	- Data augmentation
-	- Number of epochs
+	- New metrics (Precision, Recall)
 	
 ## Summary of papers
 
