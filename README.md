@@ -30,6 +30,8 @@ In order to train:
 Download dataset of COCO
 
     sh data/get_coco_dataset.sh
+    python3 train.py cfg/yolov3.cfg --data-cfg data/coco.data --dataset_name coco_data_aug --data_augmentation True
+
 
 In order to predict:
 
