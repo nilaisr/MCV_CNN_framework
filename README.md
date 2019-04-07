@@ -13,7 +13,7 @@
 This project is divided in three independent parts or stages, Object Recognition, Object Detection and Image Semantic Segmentation. They are not connectedin the sense that all together form a complete system for one sole purpose. Instead, theyare actually three parts obtaining increasingly more complex results towards one sameend, understand an scene on the basis of the objects it is composed of.
 
 ### Overleaf article
-(http://bit.ly/2CbLbEq)
+[Report](http://bit.ly/2CbLbEq)
 
 
 # Week 4
@@ -30,6 +30,8 @@ In order to train:
 Download dataset of COCO
 
     sh data/get_coco_dataset.sh
+    python3 train.py cfg/yolov3.cfg --data-cfg data/coco.data --dataset_name coco_data_aug --data_augmentation True
+
 
 In order to predict:
 
@@ -51,12 +53,12 @@ In order to predict:
 
 - Run the download framework:
 	- YOLOv3 with COCO dataset
-- Train each network with the following datasets:
-	- Camvid
-	- Synthia
-- Boost the performance of the networks:
+- Train YoloV3 with the following datasets:
+	- TT100K
+	- Udacity
+- Boost the performance of the network:
 	- Data augmentation
-	- Number of epochs
+	- New metrics (Precision, Recall)
 	
 ## Summary of papers
 
@@ -136,10 +138,10 @@ Specifying the configuration file wanted and an experiment name for the results 
 [Network summary](docs/Inception-ResNet/README.md)
 
 ### Google Slides
-(http://bit.ly/2Hd15m0)
+[Slides](http://bit.ly/2Hd15m0)
 
 ### Google Drive, Weights of the models
-(https://drive.google.com/open?id=1AyNBKUyOUVAb3ow-_CWKRhQtB5kVna1e)
+[Weights](https://drive.google.com/open?id=1AyNBKUyOUVAb3ow-_CWKRhQtB5kVna1e)
 
 ## Completed tasks
 
