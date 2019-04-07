@@ -13,7 +13,7 @@
 This project is divided in three independent parts or stages, Object Recognition, Object Detection and Image Semantic Segmentation. They are not connectedin the sense that all together form a complete system for one sole purpose. Instead, theyare actually three parts obtaining increasingly more complex results towards one sameend, understand an scene on the basis of the objects it is composed of.
 
 ### Overleaf article
-(http://bit.ly/2CbLbEq)
+[Report](http://bit.ly/2CbLbEq)
 
 
 # Week 4
@@ -136,10 +136,10 @@ Specifying the configuration file wanted and an experiment name for the results 
 [Network summary](docs/Inception-ResNet/README.md)
 
 ### Google Slides
-(http://bit.ly/2Hd15m0)
+[Slides](http://bit.ly/2Hd15m0)
 
 ### Google Drive, Weights of the models
-(https://drive.google.com/open?id=1AyNBKUyOUVAb3ow-_CWKRhQtB5kVna1e)
+[Weights](https://drive.google.com/open?id=1AyNBKUyOUVAb3ow-_CWKRhQtB5kVna1e)
 
 ## Completed tasks
 
