@@ -71,9 +71,9 @@ In order to predict:
 
 
 ### Model weights
-- [COCO](https://drive.google.com/file/d/19pDrYT1UXjYzAkKNBkHyfI2zNcXCp3A0/view?usp=sharing)
-- [TT100K](https://drive.google.com/file/d/19Mg59nrzz2VkPAuJqxFcMHMoDz_P9_AC/view?usp=sharing)
-- [Udacity](https://drive.google.com/file/d/1K7wHensMr1inzUDvCKdZr8CJQEPCqSdW/view?usp=sharing)
+- [COCO](https://drive.google.com/open?id=19pDrYT1UXjYzAkKNBkHyfI2zNcXCp3A0)
+- [TT100K](https://drive.google.com/open?id=19Mg59nrzz2VkPAuJqxFcMHMoDz_P9_AC)
+- [Udacity](https://drive.google.com/open?id=1K7wHensMr1inzUDvCKdZr8CJQEPCqSdW)
 
 # Week 3
 ### Abstract
